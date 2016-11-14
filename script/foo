@@ -1,0 +1,39 @@
+#!perl
+
+print "bar\n";
+exit 0;
+
+=head1 NAME
+
+foo - print bar!
+
+=head1 DESCRIPTION
+
+A simple script which prints C<bar!>. This distribution is used to show others how to prepare a script for CPAN.
+
+=head1 SYNOPSIS
+
+  $ foo
+  bar!
+
+=head1 AUTHOR
+
+David Farrell
+
+=head1 LICENSE
+
+FreeBSD
+
+=head1 INSTALLATION
+
+Using C<cpan>:
+
+    $ cpan App::foo
+
+Manual install:
+
+    $ perl Makefile.PL
+    $ make
+    $ make install
+
+=cut
