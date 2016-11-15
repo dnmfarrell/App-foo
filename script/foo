@@ -1,20 +1,32 @@
 #!perl
+use strict;
+use warnings;
+use DateTime;
 
-print "bar\n";
+my $text = 'bar';
+my $dt = DateTime->now;
+
+if ($dt->mon == 1 && $dt->day == 31) {
+   $text = reverse $text;
+}
+
+print "$text\n";
 exit 0;
 
 =head1 NAME
 
-foo - print bar!
+foo - print bar, usually
 
 =head1 DESCRIPTION
 
-A simple script which prints C<bar!>. This distribution is used to show others how to prepare a script for CPAN.
+A simple script which usually prints C<bar>. On national backwards day
+(January 31), it prints C<rab>. This distribution is used to show others
+how to prepare a script for CPAN.
 
 =head1 SYNOPSIS
 
   $ foo
-  bar!
+  bar
 
 =head1 AUTHOR
 

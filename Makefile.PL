@@ -9,10 +9,9 @@ WriteMakefile(
   LICENSE       => 'freebsd',
   EXE_FILES     => ['script/foo'],
   PREREQ_PM     => {
-    'autodie'       => 0,
-    'Time::Piece'   => 0,
-    'Getopt::Long'  => 0,
-    'Pod::Usage'    => '1.60',
+    'strict'   => 0,
+    'warnings' => 0,
+    'DateTime' => '0.37',
   },
   (eval { ExtUtils::MakeMaker->VERSION(6.46) } ? (META_MERGE => {
       'meta-spec' => { version => 2 },
