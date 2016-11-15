@@ -1,4 +1,4 @@
-use 5.008005;
+use 5.008004;
 use ExtUtils::MakeMaker;
 
 WriteMakefile(
@@ -7,6 +7,7 @@ WriteMakefile(
   ABSTRACT_FROM => 'lib/App/foo.pm',
   AUTHOR        => 'David Farrell',
   LICENSE       => 'freebsd',
+  MIN_PERL_VERSION => '5.008004',
   EXE_FILES     => ['script/foo'],
   PREREQ_PM     => {
     'strict'   => 0,
