@@ -2,14 +2,14 @@ use 5.008004;
 use ExtUtils::MakeMaker;
 
 WriteMakefile(
-  NAME          => 'App::foo',
-  VERSION_FROM  => 'lib/App/foo.pm',
-  ABSTRACT_FROM => 'lib/App/foo.pm',
-  AUTHOR        => 'David Farrell',
-  LICENSE       => 'freebsd',
+  NAME             => 'App::foo',
+  VERSION_FROM     => 'lib/App/foo.pm',
+  ABSTRACT_FROM    => 'lib/App/foo.pm',
+  AUTHOR           => 'David Farrell',
+  LICENSE          => 'freebsd',
   MIN_PERL_VERSION => '5.008004',
-  EXE_FILES     => ['script/foo'],
-  PREREQ_PM     => {
+  EXE_FILES        => ['script/foo'],
+  PREREQ_PM        => {
     'strict'   => 0,
     'warnings' => 0,
     'DateTime' => '0.37',
