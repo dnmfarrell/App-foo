@@ -4,7 +4,7 @@ our $VERSION = 0.01;
 
 =head1 NAME
 
-App::foo - an app that prints "foo!"
+App::foo - an app that usually prints "foo"
 
 =head1 DESCRIPTION
 
